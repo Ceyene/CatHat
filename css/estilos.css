@@ -15,6 +15,11 @@ html, body {
     padding: 0;
     font-size: 12px;
     font-family: 'Patua One', cursive;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* ------------------------ NavBar */
@@ -59,7 +64,22 @@ nav li a:hover {
 /* ------------------------ Main Section */
 
 .main_section {
-    padding: 20%;
+    padding: 10%;
     font-family: 'Flamenco', cursive;
     font-size: 2em;
+    text-align: center;
+    background-image: url("../images/MarcaAguaCatHat.svg");
+    background-position: bottom;
+}
+
+.main_section h1 {
+    margin: 2em;
+}
+
+.main_section a {
+    padding: 1em 2.5em;
+    border: 1px solid #4192D9;
+    background-color: #4192D9;
+    color: white;
+    margin: 1em;
 }
