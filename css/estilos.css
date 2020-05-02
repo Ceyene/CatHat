@@ -26,6 +26,7 @@
 /*Tipografía*/
 --normal: 12px;
 --grande: 2em;
+--parrafo: 16px;
 
 /*Espaciado*/
 --space: 1em;
@@ -45,6 +46,15 @@ html, body {
 
 a {
     text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 /* ------------------------ NavBar */
@@ -68,6 +78,7 @@ nav img {
      padding-inline-start: 0;
      margin-block-start: 0;
      margin-block-end: 0;
+     padding-inline-end: var(--space);
  }
 
  nav li {
@@ -112,4 +123,115 @@ nav li a:hover {
 
 .main_button:hover {
     background-color: var(--bluest-color);
+}
+ /*Beneficios de nuestros productos*/
+
+ .benefits {
+     background-color: var(--sweet-color);
+     padding: var(--double-space);
+ }
+
+ .grid_container {
+    max-width: 1200px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--double-space);
+ }
+
+ .benefit {
+     text-align: center;
+     padding: var(--double-space);
+ }
+
+ .benefit img {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     margin: 0.5em auto;
+ }
+
+.benefit h3 {
+    font-size: var(--grande);
+    color: var(--blue-color);
+    padding: 0.5em 1em;
+}
+
+.benefit p {
+    font-size: var(--parrafo);
+    padding: 0.5em;
+}
+
+/*Testimonios de nuestros usuarios*/
+
+.testimonials {
+    padding: var(--double-space);
+    margin-bottom: var(--double-space);
+}
+
+.testimonials h2 {
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: var(--grande);
+    font-family: 'Flamenco', cursive;
+}
+
+.testimony {
+    max-width: 350px;
+}
+
+.testimony img {
+    width: 100%;
+}
+
+.text_container {
+    padding: var(--double-space);
+    box-shadow: var(--box);
+    text-align: center;
+}
+
+.text_container h3 {
+    font-family: 'Flamenco', cursive;
+    font-size: var(--grande);
+}
+
+.text_container h4 {
+    color: var(--white-color);
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-align: right;
+    margin-inline-end: 3em;
+}
+
+.text_container p {
+    font-size: var(--parrafo);
+}
+
+.first {
+    background-color: var(--green-color);
+}
+
+.second {
+    background-color: var(--orange-color);
+}
+
+.third {
+    background-color: var(--blue-color);
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    background-color: var(--violet-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--double-space);
+}
+
+.footer a {
+    color: var(--white-color);
+    font-size: 1.5em;
 }
