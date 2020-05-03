@@ -133,17 +133,6 @@ nav li a:hover {
      display: flex;
  }
 
- .grid_container {
-    max-width: 1200px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template: 100% / repeat(3, 29%);
-    gap: var(--space);
-    justify-content: center;
- }
-
  .benefit {
      text-align: center;
      padding: var(--double-space);
@@ -169,20 +158,21 @@ nav li a:hover {
 
 /*Testimonios de nuestros usuarios*/
 
-.testimonials {
-    padding: var(--double-space);
-    margin-bottom: var(--double-space);
-}
-
-.testimonials h2 {
-    margin-bottom: 1em;
+h2 {
     text-align: center;
     font-size: var(--grande);
     font-family: 'Flamenco', cursive;
+    padding: 1em;
+}
+
+.testimonials {
+    padding: 0 10% 5% 10%;
+    display: flex;
 }
 
 .testimony {
-    max-width: 350px;
+    margin: 0 1em;
+    width: 350px;
     box-shadow: var(--box);
 }
 
@@ -191,7 +181,7 @@ nav li a:hover {
 }
 
 .text_container {
-    padding: var(--double-space);
+    padding: var(--space);
     text-align: center;
 }
 

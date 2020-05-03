@@ -13,10 +13,6 @@
     .main_button {
         padding: 0.5em;
     }
-    .grid_container {
-        max-width: 600px;
-        width: 100%;
-    }
     .benefit {
         padding: 0.25em;
     }
@@ -48,16 +44,8 @@
     }
     .chat {
         width: 65px;
-        background-color: var(--white-color);
-        box-shadow: var(--box);
-        position: fixed;
-        right: 0;
         top: 75vh;
-        z-index: 100;
         padding: 0.5em;
-        border-radius: 50%;
-        text-align: center;
-        cursor: pointer;
     }
     .chat img {
         max-width: 40px;
@@ -81,13 +69,16 @@
         font-size: 1em;
         margin-bottom: var(--space);
     }
-    .grid_container {
-        grid-template: auto auto auto / 1fr;
-        gap: var(--space);   
-    }
     .benefits {
         display: inherit;
         height: auto;
+    }
+    .testimonials {
+        display: inherit;
+        height: auto;
+    }
+    .testimony {
+        margin-bottom: 1em;
     }
     .text_container h4 {
         text-align: center;
