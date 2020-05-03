@@ -1,0 +1,96 @@
+/* ---------------- Media Queries */
+
+@media only screen and (max-width: 768px) {
+    nav img {
+        max-width: 140px;
+    }
+    .main_section {
+        padding: 5%;
+    }
+    .main_section h1 {
+        margin: var(--space);
+    }
+    .main_button {
+        padding: 0.5em;
+    }
+    .grid_container {
+        max-width: 600px;
+        width: 100%;
+    }
+    .benefit {
+        padding: 0.25em;
+    }
+    .benefit img {
+        width: 120px;
+        height: 120px;
+    }
+    .benefit h3 {
+        font-size: 1.5em;
+        padding: 0.25em;
+    }
+    .benefit p {
+        padding: 0.2em;
+    }
+    .testimony {
+        max-width: 450px;
+    }
+    .text_container {
+        padding: var(--space);
+    }
+    .text_container h3 {
+        font-size: 1.7em;
+    }
+    .text_container h4 {
+        margin-inline-end: 0;
+    }
+    .text_container p {
+        font-size: 1em;
+    }
+    .chat {
+        width: 65px;
+        background-color: var(--white-color);
+        box-shadow: var(--box);
+        position: fixed;
+        right: 0;
+        top: 75vh;
+        z-index: 100;
+        padding: 0.5em;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+    }
+    .chat img {
+        max-width: 40px;
+        width: 70%
+    }
+    
+    .chat p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav li {
+        padding: 0.5em;
+        font-size: 0.7em;
+    }
+    .main_section h1 {
+        font-size: 1.5em;
+    }
+    .main_button {
+        font-size: 1em;
+        margin-bottom: var(--space);
+    }
+    .grid_container {
+        grid-template: auto auto auto / 1fr;
+        gap: var(--space);   
+    }
+    .benefits {
+        display: inherit;
+        height: auto;
+    }
+    .text_container h4 {
+        text-align: center;
+    }
+    
+}
