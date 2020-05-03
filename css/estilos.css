@@ -33,7 +33,7 @@
 --double-space: 2em;
 
 /*Box shadow*/
---box: 0 0 1px #c1bcbc;
+--box: 0 0 5px #c1bcbc;
 }
 
 html, body {
@@ -96,7 +96,7 @@ nav li a:hover {
     color: #F2B705;
 }
 
-/* ------------------------ Main Section */
+/* ------------------ Main Section */
 
 .main_section {
     padding: 10%;
@@ -119,6 +119,7 @@ nav li a:hover {
     margin: var(--space);
     cursor: pointer;
     border-radius: 3px;
+    display: inline-block;
 }
 
 .main_button:hover {
@@ -137,8 +138,9 @@ nav li a:hover {
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--double-space);
+    grid-template: 100% / repeat(3, 29%);
+    gap: var(--space);
+    justify-content: center;
  }
 
  .benefit {
@@ -180,6 +182,7 @@ nav li a:hover {
 
 .testimony {
     max-width: 350px;
+    box-shadow: var(--box);
 }
 
 .testimony img {
@@ -188,7 +191,6 @@ nav li a:hover {
 
 .text_container {
     padding: var(--double-space);
-    box-shadow: var(--box);
     text-align: center;
 }
 
@@ -221,7 +223,7 @@ nav li a:hover {
     background-color: var(--blue-color);
 }
 
-/* Footer */
+/* ------------------------ Footer */
 
 .footer {
     display: flex;
@@ -234,4 +236,120 @@ nav li a:hover {
 .footer a {
     color: var(--white-color);
     font-size: 1.5em;
+}
+
+/* ------------------------ Chat */
+
+.chat {
+    width: 130px;
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    position: fixed;
+    right: 0;
+    top: 65vh;
+    z-index: 100;
+    padding: 0.5em;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.chat img {
+    margin: 0.5em auto;
+    max-width: 100px;
+    width: 70%
+}
+
+.chat p {
+    font-size: 1.5em;
+}
+
+/* ---------------- Media Queries */
+
+@media only screen and (max-width: 768px) {
+    .main_section {
+        padding: 5%;
+    }
+    .main_section h1 {
+        margin: var(--space);
+    }
+    .main_button {
+        padding: 0.5em;
+    }
+    .grid_container {
+        max-width: 600px;
+        width: 100%;
+    }
+    .benefit {
+        padding: 0.25em;
+    }
+    .benefit img {
+        width: 120px;
+        height: 120px;
+    }
+    .benefit h3 {
+        font-size: 1.5em;
+        padding: 0.25em;
+    }
+    .benefit p {
+        padding: 0.2em;
+    }
+    .testimony {
+        max-width: 450px;
+    }
+    .text_container {
+        padding: var(--space);
+    }
+    .text_container h3 {
+        font-size: 1.7em;
+    }
+    .text_container h4 {
+        margin-inline-end: 0;
+    }
+    .text_container p {
+        font-size: 1em;
+    }
+    .chat {
+        width: 65px;
+        background-color: var(--white-color);
+        box-shadow: var(--box);
+        position: fixed;
+        right: 0;
+        top: 75vh;
+        z-index: 100;
+        padding: 0.5em;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+    }
+    .chat img {
+        max-width: 40px;
+        width: 70%
+    }
+    
+    .chat p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav li {
+        padding: 0.5em;
+        font-size: 0.7em;
+    }
+    .main_section h1 {
+        font-size: 1.5em;
+    }
+    .main_button {
+        font-size: 1em;
+        margin-bottom: var(--space);
+    }
+    .grid_container {
+        grid-template: auto auto auto / 1fr;
+        gap: var(--space);   
+    }
+    .text_container h4 {
+        text-align: center;
+    }
+    
 }
