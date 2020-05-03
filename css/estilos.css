@@ -108,7 +108,7 @@ nav li a:hover {
 }
 
 .main_section h1 {
-    margin: var(--double-space);
+    margin: var(--space);
 }
 
 .main_button {
