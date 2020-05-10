@@ -320,6 +320,12 @@ h2 {
 .product2 {
     text-align: end;
 }
+.soon{
+    font-family: 'Flamenco', cursive;
+    font-size: 2em;
+    text-align: center;
+    margin: 1.5em;
+}
 /* ------------------------ Footer */
 
 .footer {
