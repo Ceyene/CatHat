@@ -57,6 +57,10 @@ p {
     margin-block-end: 0;
 }
 
+h1 {
+    font-family: 'Flamenco', cursive;
+}
+
 /* ------------------------ NavBar */
 nav {
     display: flex;
@@ -214,6 +218,108 @@ h2 {
     background-color: var(--blue-color);
 }
 
+/*------------------------ Catálogo*/
+.container {
+    padding: 2em 13%;
+    background-image: url('../images/MarcaAguaCatHat.svg');
+    background-position: initial;
+    background-repeat: repeat-y;
+}
+.container h1 {
+    font-size: 3em;
+}
+.row {
+    margin: 2.5em;
+    background-color: var(--white-color);
+    display: grid;
+    grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [final];
+    grid-template-rows: [superior] 1fr [inferior];
+    gap: 1.5em;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.product1 {
+    border: 3px solid var(--green-color);
+}
+.product1 h1 {
+    color: var(--green-color);
+}
+.product1 a {
+    background-color: var(--green-color);
+}
+.product1 .product_img {
+    grid-column: inicio / linea2;
+}
+.product1 .product_text {
+    grid-column: linea2 / final;
+}
+.product2 {
+    border: 3px solid var(--blue-color);
+}
+.product2 h1 {
+    color: var(--blue-color);
+}
+.product2 a {
+    background-color: var(--blue-color);
+}
+.product2 .product_img {
+    grid-column: linea3 / final;
+}
+.product2 .product_text {
+    grid-column: inicio / linea3;
+}
+.product3 {
+    border: 3px solid var(--orange-color);
+}
+.product3 h1 {
+    color: var(--orange-color);
+}
+.product3 a {
+    background-color: var(--orange-color);
+}
+.product3 .product_img {
+    grid-column: inicio / linea2;
+}
+.product3 .product_text {
+    grid-column: linea2 / final;
+}
+.product_img {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: superior / inferior;
+}
+.product_img img {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    max-width: 250px;
+    max-height: 200px;
+}
+.product_text {
+    padding: 1.5em;
+    grid-row: superior / inferior;
+}
+.product_text p {
+    margin: 1.5em 0;
+    font-size: 15px;
+}
+.product_text a {
+    color: var(--white-color);
+    padding: 15px;
+    font-size: 14px;
+    margin: 1.5em 0;
+    display: inline-block;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.product1,
+.product3 {
+    text-align: start;
+}
+.product2 {
+    text-align: end;
+}
 /* ------------------------ Footer */
 
 .footer {
