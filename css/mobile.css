@@ -63,9 +63,14 @@
         max-width: 40px;
         width: 70%
     }
-    
     .chat p {
         font-size: 1em;
+    }
+    .row {
+        display: inherit;
+    }
+    .product_text p {
+        margin: 0.5em 0;
     }
 }
 
@@ -95,5 +100,10 @@
     .text_container h4 {
         text-align: center;
     }
-    
+    .container {
+        padding: 2em 3%;
+    }
+    .row {
+        margin: 2.5em 0;
+    }
 }
