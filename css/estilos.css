@@ -416,6 +416,26 @@ h2 {
     margin: 0.5em;
 }
 
+/* ------------------ Pago Exitoso */
+.success {
+    text-align: center;
+}
+.success p {
+    font-size: var(--parrafo);
+}
+.success a{
+    color: var(--green-color);
+}
+.success img {
+    max-width: 300px;
+    border-radius: 50%;
+    margin-bottom: 3em;
+}
+.success .main_button {
+    color: var(--white-color);
+    margin-top: 3em;
+}
+
 /* ------------------------ Footer */
 
 .footer {
