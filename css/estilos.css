@@ -103,10 +103,10 @@ nav li a:hover {
 label, 
 input {
     font-size: var(--parrafo);
-    margin: var(--space);
-    max-width: 490px;
+    margin: var(--space) 0;
     width: 100%;
     height: 35px;
+    box-sizing: border-box;
 }
 
 input {
@@ -363,11 +363,18 @@ h2 {
 }
 
 .form-container {
-    padding: 10% var(--space);
+    padding: 10% var(--double-space);
     width: 40vw;
 }
 
-.form-container button {
+.form-container h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+    text-decoration: underline;
+}
+
+.buy-button {
     padding: var(--space);
     background-color: var(--violet-color);
     color: var(--white-color);
@@ -375,8 +382,9 @@ h2 {
     border-color: var(--violet-color);
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin: var(--space) 35% 0;
+    width: 100%;
     cursor: pointer;
+    margin: var(--space) 0 0;
 }
 
 .hat-container {

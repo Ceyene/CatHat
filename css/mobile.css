@@ -72,6 +72,15 @@
     .product_text p {
         margin: 0.5em 0;
     }
+    .hat-container {
+        margin-bottom: 2.5em;
+    }
+    .form-container {
+        width: auto;
+    }
+    .container h1 {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -106,5 +115,12 @@
     }
     .row {
         margin: 2.5em 0;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .hat-container img {
+        width: 300px;
+        height: auto;
     }
 }
