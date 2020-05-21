@@ -419,6 +419,10 @@ h2 {
 /* ------------------ Pago Exitoso */
 .success {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .success p {
     font-size: var(--parrafo);
